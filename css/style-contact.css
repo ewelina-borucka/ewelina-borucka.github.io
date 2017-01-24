@@ -1,0 +1,79 @@
+h2 {
+  margin-bottom: 8px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-left: 4px;
+}
+
+.contact {
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 20px;
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  padding: 20px;
+  text-align: justify;
+}
+
+.square {
+  border-right: 4px solid #BADA55;
+  border-bottom: 4px solid #BADA55;
+  /*border-top: 4px solid white;
+  border-left: 4px solid white;*/
+}
+
+
+.rocket {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2%;
+  right: 10%;
+  /*animation: flotate 20s infinite ease-in-out;*/
+  animation: flotate 20s infinite cubic-bezier(0.1, 1.18, 0.51, 0.4);
+  opacity: 0.7;
+}
+@keyframes flotate {
+
+% {
+    transform: translateY(0%) rotate(0deg);
+}
+50% {
+    transform: translateY(100px) rotate(360deg);
+}
+100% {
+    transform: translateY(0%) rotate(0deg);
+}
+}
+/* ========================================================
+  Media Queries for info page container
+==========================================================*/
+
+@media (min-width: 901px) {
+  .row {
+    flex-direction: row;
+  }
+  .column {
+    flex: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .primary {
+    flex: 2;
+  }
+}
