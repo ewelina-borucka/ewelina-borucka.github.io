@@ -1,6 +1,60 @@
+.square {
+  border: none;
+  margin-top: 0;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
 .box {
-  border: 2px solid #303030;
+  height: 250px;
+  width: 250px;
   border-radius: 2px;
-  height: 70px;
-  width: 70px;
+  margin: 40px;
+  position: relative;
+  /*border: 2px solid #303030;*/
+
+}
+
+.projectBox {
+  background-color: rgb(186, 218, 85);
+  border-radius: 4px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  transition: all .2s ease-in-out;
+}
+
+ a .projectBox:hover {
+  background-color: #BADA55;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.number {
+  position: absolute;
+  top: 4px;
+  left: -40px;
+  z-index: 3;
+  opacity: 0.9;
+
+}
+
+.title {
+  position: absolute;
+  top: 200px;
+}
+
+.line {
+  position: relative;
+  top: 180px;
+  height: 10px;
+  width: auto;
+  border-bottom: 2px solid #383838;
+  opacity: 0.8;
+  z-index: 100;
 }

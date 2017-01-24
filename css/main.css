@@ -58,7 +58,8 @@ a {
 }
 
 .main-nav a.selected {
-  text-decoration: line-through;
+  /*text-decoration: line-through;*/
+  border-bottom: 4px solid #BADA55;
 }
 
 /* ========================================================
@@ -92,16 +93,9 @@ a {
   text-align: center;
   padding-bottom: 1.8em;
   margin-top: 30px;
-}
+  /*transform:rotateZ(90deg);*/
 
-.inner {
-  color: #303030;
 }
-.outer {
-  text-decoration: underline;;
-  color: #BADA55;
-}
-
 
 /* ========================================================
   Media Queries

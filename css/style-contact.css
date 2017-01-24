@@ -14,9 +14,14 @@ h3 {
 .contact {
   border: 2px solid black;
   border-radius: 2px;
-  padding: 20px;
   padding-left: 30px;
   margin-top: 30px;
+}
+
+.contact,
+.skills {
+  padding: 20px;
+
 }
 
 .row {
@@ -25,15 +30,11 @@ h3 {
 }
 
 .column {
-  padding: 20px;
   text-align: justify;
 }
 
 .square {
-  border-right: 4px solid #BADA55;
-  border-bottom: 4px solid #BADA55;
-  /*border-top: 4px solid white;
-  border-left: 4px solid white;*/
+  border-right: 2px solid #BADA55;
 }
 
 
@@ -41,11 +42,11 @@ h3 {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 2%;
-  right: 10%;
-  /*animation: flotate 20s infinite ease-in-out;*/
-  animation: flotate 20s infinite cubic-bezier(0.1, 1.18, 0.51, 0.4);
-  opacity: 0.7;
+  top: 80%;
+  right: 5%;
+  animation: flotate 8s infinite ease-in-out;
+  /*animation: flotate 10s infinite cubic-bezier(0.4, 1.18, 0.51, 1.4);*/
+  opacity: 0.8;
 }
 @keyframes flotate {
 
@@ -53,27 +54,30 @@ h3 {
     transform: translateY(0%) rotate(0deg);
 }
 50% {
-    transform: translateY(100px) rotate(360deg);
+    transform: translateY(30px) rotate(300deg);
 }
 100% {
     transform: translateY(0%) rotate(0deg);
 }
 }
+
+
 /* ========================================================
   Media Queries for info page container
 ==========================================================*/
 
-@media (min-width: 901px) {
+@media (min-width: 1148px) {
   .row {
     flex-direction: row;
+    justify-content: space-between;
   }
-  .column {
-    flex: 1;
-  }
-}
 
-@media (min-width: 900px) {
-  .primary {
-    flex: 2;
+  .intro {
+    padding-right: 120px;
   }
+
+  .contact {
+    margin-top: 40px;
+  }
+
 }
