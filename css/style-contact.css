@@ -1,41 +1,69 @@
-h2 {
+/*h2 {
   margin-bottom: 8px;
-}
+}*/
 
-h1 {
+/*h1 {
   margin-bottom: 0;
-}
+}*/
 
-h3 {
+/*h3 {
   margin-top: 0;
   margin-left: 4px;
-}
+}*/
 
 .contact {
   border: 2px solid black;
   border-radius: 2px;
-  padding-left: 30px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .contact,
-.skills {
-  padding: 20px;
-
+.skills,
+.intro {
+  /*text-transform: uppercase;*/
 }
 
 .row {
   display: flex;
   flex-direction: column;
+  /*font-family: "Roboto Mono";*/
 }
 
 .column {
   text-align: justify;
+  margin-top: 40px;
 }
 
 .square {
-  border-right: 2px solid #1ff042;
+  /*border-right: 2px solid #1ff042;*/
 }
+
+
+
+/* ========================================================
+  Media Queries for info page container
+==========================================================*/
+
+@media (min-width: 1000px) {
+  .row {
+    flex-direction: row;
+  }
+
+
+  .intro {
+    padding-right: 200px;
+  }
+
+  .contact {
+    margin-top: 40px;
+  }
+
+}
+
+
+/* ========================================================
+  Animation rocket
+==========================================================*/
 
 
 .rocket {
@@ -59,25 +87,4 @@ h3 {
 100% {
     transform: translateY(0%) rotate(0deg);
 }
-}
-
-
-/* ========================================================
-  Media Queries for info page container
-==========================================================*/
-
-@media (min-width: 1148px) {
-  .row {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .intro {
-    padding-right: 120px;
-  }
-
-  .contact {
-    margin-top: 40px;
-  }
-
 }

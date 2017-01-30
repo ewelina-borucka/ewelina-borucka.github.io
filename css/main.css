@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Space Mono", monospace;;
+  font-family: "Roboto Mono", monospace;;
   color: #303030;
   margin: 0;
 }
@@ -38,10 +38,9 @@ a {
 }
 
 .tl {
-  padding-left: 8px;
+  padding-left: 6px;
   color: #303030;
   font-family: "Roboto Mono";
-  /*font-weight: bold;*/
 }
 
 .title-1 {
@@ -53,7 +52,10 @@ a {
 }
 
 .name {
-  border-left: 44px solid #a31aff;
+  border-left: 44px solid #1ff042;
+  border-left: 44px solid #0000e6;
+  border-left: 44px solid #282828;
+
   border-radius: 1px;
 }
 
@@ -66,7 +68,7 @@ a {
 }
 
 .main-nav a {
-  font-size: 1.6em;
+  font-size: 1.4em;
   text-transform: uppercase;
   color: #303030;
 }
@@ -100,7 +102,6 @@ a {
 .square {
   margin-top: 20px;
   border: 1px solid black;
-  padding: 40px;
   height: auto;
   min-height: 400px;
 }
@@ -114,7 +115,6 @@ a {
   padding-bottom: 1.8em;
   margin-top: 30px;
   /*transform:rotateZ(90deg);*/
-
 }
 
 /* ========================================================
@@ -133,19 +133,19 @@ a {
   }
 
   .container {
-    width: 90%;
+    /*width: 90%;*/
   }
 
   .square {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 }
 
 
 @media (min-width: 768px) {
   .container {
-    width: 95%;
-    max-width: 1250px;
+    width: 90%;
+    max-width: 1100px;
   }
 
   .main-header {
@@ -159,14 +159,15 @@ a {
   }
 
   .square {
-    margin-top: 90px;
+    margin-top: 150px;
   }
 }
 
 
 
-
-/*      ////////////////////////////////////////////            */
+/* ========================================================
+  GLITCH
+==========================================================*/
 
 .glitch-box {
   width: 320px;
@@ -177,7 +178,6 @@ a {
   font-size: 44px;
   position: relative;
   background-color: #303030;
-  /*border-left: 18px solid #1ff042;*/
   /*border-left: 18px solid blue;*/
   border-radius: 1px;
   font-family: "Roboto Mono";
