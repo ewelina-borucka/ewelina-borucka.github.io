@@ -10,7 +10,6 @@
   width: 250px;
   margin: 30px;
   position: relative;
-  /*border: 1px solid red;*/
 }
 
 .projectBox {
@@ -20,13 +19,13 @@
   width: 170px;
   height: 170px;
   margin: auto;
-  /*transition: all .1s ease-in-out;*/
+  transition: all .2s ease-in-out;
   cursor: pointer;
 }
 
-/*.projectBox:hover {
+.projectBox:hover {
   border-radius: 50%;
-}*/
+}
 
 .number {
   position: absolute;
@@ -41,11 +40,14 @@
   left: 45px;
 }
 
+.square {
+  border: none;
+}
 
 /* -------------------------------------------  */
 
 .glitch-box {
-  width: 180px;
+  width: 190px;
 }
 
 .glitch {
@@ -54,7 +56,7 @@
   position: relative;
   background-color: #303030;
   border-left: 8px solid #303030;
-  border-radius: 1px;
+  border-radius: 2px;
   font-family: "Roboto Mono";
   font-weight: bold;
 }
