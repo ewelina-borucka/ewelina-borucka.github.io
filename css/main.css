@@ -110,13 +110,6 @@ a {
   /*transform:rotateZ(90deg);*/
 }
 
-.fa {
-  color: red;
-  width: 50px;
-  height: 50px;
-  margin: auto;
-}
-
 /* ========================================================
   Media Queries
 ==========================================================*/
@@ -150,9 +143,9 @@ a {
     margin-top: 60px;
   }
 
-  /*.main-footer {
+  .main-footer {
     text-align: right;
-  }*/
+  }
 
   .square {
     margin-top: 110px;
@@ -191,7 +184,7 @@ a {
 ==========================================================*/
 
 .glitch-box {
-  width: 500px;
+  width: 400px;
 }
 
 .glitch {
@@ -200,7 +193,6 @@ a {
   position: relative;
   background-color: #303030;
   border-radius: 2px;
-  /*border-left: 14px solid red;*/
   font-family: "Roboto Mono";
   font-weight: bold;
 }

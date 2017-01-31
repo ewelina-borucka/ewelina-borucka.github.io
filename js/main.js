@@ -3,12 +3,6 @@
 // -----------------------------------------------------------------------//
 
 
-// --------------------  Portfolio Page  -----------------------//
-
-var dropMe = new TimelineMax({reapet: 1, reapetDelay: 1});
-dropMe.staggerTo(".contact", 4, {y: 40, ease: Bounce.easeOut}, 0.2);
-
-
 // ------------------------  Info Page  -----------------------//
 
 TweenLite.set(".secondary", {visibility: "visible"});
@@ -20,7 +14,7 @@ tl.staggerFrom(".skills li", 0.9, {
     rotationX: [-90, 90],
     transformOrigin: ["50% top -100", "50% bottom 100"]
   }
-}, 0.1);
+}, 0.4);
 
 TweenLite.set(".main-header", {visibility: "visible"});
 var tl = new TimelineMax();
@@ -33,6 +27,10 @@ tl.staggerFrom(".main-nav li", 0.9, {
   }
 }, 0.1);
 
+
+
+var touch = new TimelineMax({reapet: 1, reapetDelay: 1});
+touch.staggerTo(".contact", 2, {y: 60, ease: Bounce.easeOut}, 0.4);
 
 // ------------------------  Home Page  -----------------------//
 
