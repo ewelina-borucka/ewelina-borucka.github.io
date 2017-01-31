@@ -51,8 +51,7 @@ a {
 }
 
 .name {
-  border-left: 8px solid #1ff042;
-  border-radius: 2px;
+  border-left: 10px solid #1ff042;
 }
 
 /*  NAV links  */
@@ -100,6 +99,10 @@ a {
   border: 2px solid black;
   height: auto;
   min-height: 600px;
+}
+
+.square {
+  border: none;
 }
 
 /* ========================================================

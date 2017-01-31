@@ -1,6 +1,5 @@
 .name {
-  border-left: 8px solid #0000e6;
-  border-radius: 2px;
+  border-left: 10px solid #0000e6;
 }
 
 .boxes {
@@ -27,7 +26,7 @@
   cursor: pointer;
 }
 
-.projectBox {
+.projectBox:hover {
   border-radius: 50%;
   width: 200px;
   height: 200px;
