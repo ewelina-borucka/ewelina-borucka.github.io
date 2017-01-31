@@ -1,3 +1,7 @@
+.main-nav a.selected {
+  border-bottom: 4px solid #0000e6;
+}
+
 
 .boxes {
   display: flex;
@@ -14,30 +18,34 @@
 
 .projectBox {
   /*background-color: #0000e6;*/
-  border: 4px solid red;
+  border: 8px solid red;
   border-radius: 1px;
   width: 200px;
   height: 200px;
   margin: auto;
-  transition: all .2s ease-in-out;
+  transition: all .1s ease-in-out;
   cursor: pointer;
 }
 
 .projectBox:hover {
   border-radius: 50%;
+  background-color: red;
+  opacity: 0.8;
 }
 
 .number {
   position: absolute;
   top: 25px;
-  left: -5px;
+  left: -11px;
   z-index: 3;
 }
 
 .title {
   position: absolute;
-  top: 150px;
-  left: 45px;
+  top: 180px;
+  left: 50px;
+  font-size: 1.1rem;
+  font-weight: bolder;
 }
 
 .square {
@@ -47,17 +55,17 @@
 /* -------------------------------------------  */
 
 .glitch-box {
-  width: 190px;
+  width: 220px;
 }
 
 .glitch {
   color: white;
-  font-size: 30px;
+  font-size: 2.7rem;
   position: relative;
   background-color: #303030;
   border-left: 8px solid #303030;
-  border-radius: 2px;
-  font-family: "Roboto Mono";
+  border-radius: 1px;
+  font-family: monospace;
   font-weight: bold;
 }
 
