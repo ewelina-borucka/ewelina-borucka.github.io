@@ -28,6 +28,11 @@ a {
   margin-top: 40px;
 }
 
+.fa {
+  color: red;
+  width: 40px;
+  height: 40px;
+}
 /* ========================================================
   Navigation
 ==========================================================*/
@@ -41,21 +46,11 @@ a {
   padding-left: 6px;
   color: #303030;
   font-family: "Roboto Mono";
-}
-
-.title-1 {
   font-size: 1.2rem;
 }
 
-.title-2 {
-  font-size: 1rem;
-}
-
 .name {
-  border-left: 44px solid #1ff042;
-  border-left: 44px solid #0000e6;
   border-left: 44px solid #282828;
-
   border-radius: 1px;
 }
 
@@ -68,20 +63,19 @@ a {
 }
 
 .main-nav a {
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-transform: uppercase;
   color: #303030;
 }
 
 .main-nav a:hover {
   font-weight: bold;
-  border: 2px solid #1ff042;
+  border-bottom: 3px solid red;
 
 }
 
 .main-nav a.selected {
-  /*text-decoration: line-through;*/
-  /*border: 2px solid #1ff042;*/
+  text-decoration: line-through;
 }
 
 /* ========================================================
@@ -111,11 +105,11 @@ a {
 ==========================================================*/
 
 .main-footer {
-  text-align: center;
   padding-bottom: 1.8em;
   margin-top: 30px;
   /*transform:rotateZ(90deg);*/
 }
+
 
 /* ========================================================
   Media Queries
@@ -130,10 +124,6 @@ a {
   .main-header {
     flex-direction: column;
     align-items: center;
-  }
-
-  .container {
-    /*width: 90%;*/
   }
 
   .square {
@@ -164,7 +154,6 @@ a {
 }
 
 
-
 /* ========================================================
   GLITCH
 ==========================================================*/
@@ -178,7 +167,6 @@ a {
   font-size: 44px;
   position: relative;
   background-color: #303030;
-  /*border-left: 18px solid blue;*/
   border-radius: 1px;
   font-family: "Roboto Mono";
   font-weight: bold;
