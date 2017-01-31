@@ -58,7 +58,7 @@ a {
 }
 
 .main-nav a {
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-transform: uppercase;
   color: #303030;
 }
@@ -70,7 +70,7 @@ a {
 }
 
 .main-nav a.selected {
-  text-decoration: line-through;
+  border-bottom: 3px solid red;
 }
 
 /* ========================================================
@@ -159,13 +159,39 @@ a {
   }
 }
 
+/* ========================================================
+  ROCKET Animation
+==========================================================*/
+.rocket {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  animation: flotate 8s infinite ease-in-out;
+  animation: flotate 10s infinite cubic-bezier(0.4, 1.18, 0.51, 1.4);
+  opacity: 0.8;
+}
+@keyframes flotate {
+
+% {
+    transform: translateY(0%) rotate(0deg);
+}
+50% {
+    transform: translateY(30px) rotate(300deg);
+}
+100% {
+    transform: translateY(0%) rotate(0deg);
+}
+}
+
 
 /* ========================================================
   GLITCH
 ==========================================================*/
 
 .glitch-box {
-  width: 320px;
+  width: 500px;
 }
 
 .glitch {
@@ -174,8 +200,7 @@ a {
   position: relative;
   background-color: #303030;
   border-radius: 2px;
-  padding: 1px;
-  border-left: 14px solid red;
+  /*border-left: 14px solid red;*/
   font-family: "Roboto Mono";
   font-weight: bold;
 }

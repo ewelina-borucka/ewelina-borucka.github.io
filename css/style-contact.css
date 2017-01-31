@@ -45,6 +45,7 @@
 
   .intro {
     padding-right: 200px;
+    margin-top: 60px;
   }
 
   .contact {
@@ -55,33 +56,4 @@
     margin-top: 0;
   }
 
-}
-
-
-/* ========================================================
-  Animation rocket
-==========================================================*/
-
-
-.rocket {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 80%;
-  right: 5%;
-  animation: flotate 8s infinite ease-in-out;
-  /*animation: flotate 10s infinite cubic-bezier(0.4, 1.18, 0.51, 1.4);*/
-  opacity: 0.8;
-}
-@keyframes flotate {
-
-% {
-    transform: translateY(0%) rotate(0deg);
-}
-50% {
-    transform: translateY(30px) rotate(300deg);
-}
-100% {
-    transform: translateY(0%) rotate(0deg);
-}
 }
