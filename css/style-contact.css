@@ -1,18 +1,19 @@
+h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+
+}
 
 .contact {
-  border: 2px solid black;
+  border: 3px solid #303030;
   border-radius: 2px;
-  margin-top: 40px;
   padding: 10px 20px;
-  line-height: 30px;
 }
 
 .contact a {
-  color: red;
-}
-
-.skills {
-  text-align: center;
+  color: #303030;
+  line-height: 30px;
 }
 
 .row {
@@ -25,12 +26,12 @@
   margin-top: 40px;
 }
 
-.square {
-  border: none;
+.skills {
+  line-height: 40px;
 }
 
-.skills {
-  line-height: 30px;
+.square {
+  border: none;
 }
 
 /* ========================================================
@@ -45,15 +46,8 @@
 
   .intro {
     padding-right: 200px;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
-  .contact {
-    margin-top: 20px;
-  }
-
-  .secondary {
-    margin-top: 0;
-  }
 
 }
