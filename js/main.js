@@ -5,8 +5,8 @@
 
 // --------------------  Portfolio Page  -----------------------//
 
-var tl = new TimelineMax({reapet: 1, reapetDelay: 1});
-tl.staggerTo(".box", 1, {y: 10, ease: Bounce.easeOut}, 0.1);
+var dropMe = new TimelineMax({reapet: 1, reapetDelay: 1});
+dropMe.staggerTo(".contact", 4, {y: 40, ease: Bounce.easeOut}, 0.2);
 
 
 // ------------------------  Info Page  -----------------------//
