@@ -1,32 +1,23 @@
-/*h2 {
-  margin-bottom: 8px;
-}*/
-
-/*h1 {
-  margin-bottom: 0;
-}*/
-
-/*h3 {
-  margin-top: 0;
-  margin-left: 4px;
-}*/
 
 .contact {
   border: 2px solid black;
   border-radius: 2px;
   margin-top: 40px;
+  padding: 10px 20px;
+  line-height: 30px;
 }
 
-.contact,
-.skills,
-.intro {
-  /*text-transform: uppercase;*/
+.contact a {
+  color: red;
+}
+
+.skills {
+  text-align: center;
 }
 
 .row {
   display: flex;
   flex-direction: column;
-  /*font-family: "Roboto Mono";*/
 }
 
 .column {
@@ -35,10 +26,12 @@
 }
 
 .square {
-  /*border-right: 2px solid #1ff042;*/
+  border: none;
 }
 
-
+.skills {
+  line-height: 30px;
+}
 
 /* ========================================================
   Media Queries for info page container
@@ -55,7 +48,11 @@
   }
 
   .contact {
-    margin-top: 40px;
+    margin-top: 20px;
+  }
+
+  .secondary {
+    margin-top: 0;
   }
 
 }
