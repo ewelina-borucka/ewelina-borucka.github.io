@@ -35,8 +35,11 @@ touch.staggerTo(".contact", 2, {y: 60, ease: Bounce.easeOut}, 0.4);
 // ------------------------  Home Page  -----------------------//
 
 
-
-
+TweenMax.to(".rocket", 1, {
+  x: function(index, target) {
+    return (index + 3) * 100;
+  }
+});
 
 
 
