@@ -1,12 +1,8 @@
-.name {
-  border-left: 12px solid #383838;
-}
 
 h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 1.8rem;
+  margin: 1.2rem 0 0.4rem;
 }
 
 .row {
@@ -15,56 +11,79 @@ h2 {
 }
 
 .column {
-  text-align: justify;
-  margin-top: 30px;
-}
-
-.me {
   font-size: 1.1rem;
-  line-height: 1.7rem;
 }
 
-.highlight {
-  padding: 4px;
-  background-color: red;
-  border-radius: 1px;
-  opacity: 0.8;
-  color: white;
+.intro {
+  line-height: 1.7rem;
 }
 
 .contact {
   border: 3px solid #303030;
-  border-radius: 2px;
-  padding: 10px 20px;
+  border-radius: 3px;
+  padding: 8px;
 }
 
 .contact a {
   color: #303030;
-  line-height: 30px;
+  line-height: 2rem;
 }
 
 .skills {
-  line-height: 40px;
+  line-height: 2.4rem;
 }
 
 .square {
   border: none;
 }
 
+
+.glitch-info {
+  width: 360px;
+  border: 20px solid #282828;
+  margin-bottom: 3.6rem;
+
+}
+
 /* ========================================================
   Media Queries for info page container
 ==========================================================*/
+@media (max-width: 600px) {
+  .glitch-box {
+    display: none;
+  }
+}
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .row {
     flex-direction: row;
   }
 
-
-  .intro {
-    padding-right: 180px;
-    margin-top: 40px;
+  .column {
+    text-align: justify;
   }
 
+  .secondary {
+    margin-top: 2rem;
+  }
+
+  .intro {
+    margin-top: 2.6rem;
+    padding-right: 180px;
+    line-height: 1.8rem;
+  }
+
+  .contact {
+    margin-top: 2rem;
+  }
+
+  .highlight {
+    padding: 4px;
+    background-color: red;
+    opacity: 0.8;
+    border-radius: 1px;
+    color: ghostwhite;
+    font-weight: bold;
+  }
 
 }
