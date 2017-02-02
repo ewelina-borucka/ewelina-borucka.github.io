@@ -11,6 +11,7 @@ body {
   font-family: "Roboto Mono", monospace;;
   color: #282828;
   margin: 0;
+  font-size: 10px;
 }
 
 ul {
@@ -25,7 +26,7 @@ a {
 }
 
 .main-header {
-  margin-top: 40px;
+  margin-top: 1.5rem;
 }
 
 /* ========================================================
@@ -35,16 +36,15 @@ a {
 .name {
   display: none;
 }
-/*  NAV links  */
 
 .main-nav a {
   display: flex;
   flex-flow: row-reverse;
-  padding: 0.9rem;
+  padding: 0.8rem;
 }
 
 .main-nav a {
-  font-size: 1.2em;
+  font-size: 1.1rem;
   text-transform: uppercase;
   color: #282828;
 }
@@ -79,13 +79,13 @@ a {
   flex: 1;                        /* set the sticky footer */
 }
 
-.square {
+/*.square {
   border: 2px solid #282828;
 }
 
 .square {
   border: none;
-}
+}*/
 
 /* ========================================================
   Footer
@@ -94,7 +94,7 @@ a {
 .main-footer {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   font-family: monospace;
   font-size: 1rem;
 }
@@ -122,20 +122,11 @@ a {
 
 .home-glitch-container {
   width: 100%;
-  /*margin-top: 1%;*/
 }
 
 .home-glitch {
   font-size: 2.2rem;
 }
-
-.welcome-text {
-  /*margin-top: 2%;*/
-  width: 100%;
-  line-height: 2rem;
-  font-size: 1.1rem;
-}
-
 
 @keyframes noise-anim {
   0% {
@@ -296,55 +287,48 @@ a {
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
+.welcome-text {
+  width: 100%;
+  line-height: 2.2rem;
+  font-size: 1.1rem;
+  letter-spacing: -0.04rem;
+}
+
 
 /* ========================================================
   Media Queries
 ==========================================================*/
 
-@media (min-width: 414px) {
+/*@media (min-width: 414px) {
   .main-header,
   .main-nav {
     display: flex;
-  }
+  }*/
 
   /*.main-header {
     flex-direction: column;
     align-items: center;
   }*/
 
-  .square {
+  /*.square {
     margin-top: 2.2rem;
   }
-}
+}*/
 
+@media (min-width: 480px) {
 
-@media (min-width: 568px) {
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
 
   .main-header {
-    flex-direction: row;
-    justify-content: space-between;  /* separate logo and nav items */
-    margin-top: 3.8rem;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .square {
-    margin-top: 110px;
-  }
-
-  .home-glitch-container {
-    width: 99%;
-    margin-top: 15%;
-  }
-
-  .home-glitch {
-    font-size: 55px;
-  }
-
-  .welcome-text {
-    margin-top: 4%;
-    width: 98%;
-    line-height: 4.4rem;
-    letter-spacing: -0.1rem;
-    font-size: 1.8rem;
+    margin-top: 2.8rem;
   }
 
   .name {
@@ -361,8 +345,7 @@ a {
   }
 
   .tl {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 0.7rem;
     padding-left: 6px;
     letter-spacing: -0.02rem;
     color: #303030;
@@ -372,18 +355,58 @@ a {
     border-left: 2px solid #383838;
   }
 
-
 }
 
+@media (min-width: 568px) {
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;  /* separate logo and nav items */
+    margin-top: 2rem;
+  }
+
+  .tl {
+    font-size: 0.9rem;
+    letter-spacing: -0.02rem;
+  }
+
+  .square {
+    margin-top: 10%;
+  }
+
+  .home-glitch-container {
+    width: 99%;
+  }
+
+  .home-glitch {
+    font-size: 3rem;
+  }
+
+  .welcome-text {
+    margin-top: 4%;
+    width: 98%;
+    line-height: 4.2rem;
+    /*letter-spacing: -0.1rem;*/
+    font-size: 1.3rem;
+  }
+
+}
 
 @media (min-width: 1000px) {
 
   .main-nav a {
-    padding: 1rem;
+    padding: 1.4rem;
+    font-size: 1.3rem;
   }
+
+  .tl {
+    font-size: 1.1rem;
+    letter-spacing: -0.02rem;
+  }
+
   .main-footer {
     justify-content: flex-end;
-    font-size: 1.3rem;
+    font-size: 1rem;
     transform:rotateZ(-5deg);
     transition: .4s linear;
   }
@@ -392,10 +415,9 @@ a {
     transform:rotateZ(0deg);
   }
 
-  .inner:hover {
+  /*.inner:hover {
     border-bottom: 4px solid red;
-  }
-
+  }*/
 }
 
 
