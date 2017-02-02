@@ -30,7 +30,7 @@ tl.staggerFrom(".main-nav li", 0.9, {
 
 
 var touch = new TimelineMax({reapet: 1, reapetDelay: 1});
-touch.staggerTo(".contact", 2, {y: 60, ease: Bounce.easeOut}, 0.4);
+touch.staggerTo(".contact", 2, {y: 30, ease: Bounce.easeOut}, 0.4);
 
 // ------------------------  Home Page  -----------------------//
 
