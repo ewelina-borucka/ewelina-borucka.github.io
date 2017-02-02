@@ -376,26 +376,16 @@ a {
 /* ========================================================
   ROCKET Animation
 ==========================================================*/
-.rocket {
+
+/*.rocket {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 70%;
-  right: 25%;
-  /*animation: flotate 8s infinite ease-in-out;*/
-  animation: flotate 8s infinite cubic-bezier(0.4, 1.18, 0.51, 1.4);
+  top: 52%;
+  right: 50%;
   opacity: 0.9;
 }
 
-.rocket-1 {
-  top: 80%;
-  right: 15%;
-}
-
-.rocket-2 {
-  top: 60%;
-  right: 35%;
-}
 @keyframes flotate {
 
 % { transform: translateY(0%) rotate(0deg); }
@@ -403,4 +393,4 @@ a {
 50% { transform: translateY(30px) rotate(300deg);
 }
 100% { transform: translateY(0%) rotate(0deg); }
-}
+}*/
