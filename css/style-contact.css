@@ -1,3 +1,16 @@
+.wrapper {
+  border-right: 8px solid red;
+}
+
+.main-nav a:hover {
+  font-weight: bold;
+  border-bottom: 4px solid red;
+}
+
+.main-nav a.selected {
+  font-weight: bold;
+  color: red;
+}
 
 h2 {
   text-transform: uppercase;

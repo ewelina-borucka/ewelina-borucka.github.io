@@ -1,5 +1,15 @@
-.name {
-  border-left: 12px solid #383838;
+.wrapper {
+  border-right: 8px solid blue;
+}
+
+.main-nav a:hover {
+  font-weight: bold;
+  border-bottom: 4px solid blue;
+}
+
+.main-nav a.selected {
+  font-weight: bold;
+  color: blue;
 }
 
 .boxes {

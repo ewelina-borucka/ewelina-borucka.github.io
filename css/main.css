@@ -48,8 +48,7 @@ a {
 }
 
 .name {
-  /*border-left: 8px solid #1ff042;*/
-  border-left: 12px solid #383838;
+  border-left: 2px solid #383838;
 }
 
 /*  NAV links  */
@@ -68,19 +67,19 @@ a {
 
 .main-nav a:hover {
   font-weight: bold;
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid #BADA55;
 }
 
 .main-nav a.selected {
   font-weight: bold;
-  color: red;
+  color: #BADA55;
 }
 
 /* ========================================================
   Main Container
 ==========================================================*/
 .wrapper {
-  border-right: 4px solid red;
+  border-right: 8px solid #BADA55;
 }
 
 .container {
@@ -120,64 +119,7 @@ a {
 .fa {
   width: 40px;
   height: 40px;
-  color: red;
-}
-
-/* ========================================================
-  Media Queries
-==========================================================*/
-
-@media (min-width: 414px) {
-  .main-header,
-  .main-nav {
-    display: flex;
-  }
-
-  /*.main-header {
-    flex-direction: column;
-    align-items: center;
-  }*/
-
-  .square {
-    margin-top: 2.2rem;
-  }
-}
-
-
-@media (min-width: 568px) {
-
-  .main-header {
-    flex-direction: row;
-    justify-content: space-between;  /* separate logo and nav items */
-    margin-top: 3.8rem;
-  }
-
-  .square {
-    margin-top: 110px;
-  }
-}
-
-
-@media (min-width: 1000px) {
-
-  .main-nav a {
-    padding: 1rem;
-  }
-  .main-footer {
-    justify-content: flex-end;
-    font-size: 1.3rem;
-    transform:rotateZ(-5deg);
-    transition: .4s linear;
-  }
-
-  .main-footer:hover {
-    transform:rotateZ(0deg);
-  }
-
-  .inner:hover {
-    border-bottom: 4px solid red;
-  }
-
+  color: #BADA55;
 }
 
 /* ========================================================
@@ -189,31 +131,29 @@ a {
   font-size: 2.9rem;
   position: relative;
   background-color: #282828;
-  border-left: 20px solid #282828;
+  padding-left: 10px;
+  border-left: 25px solid #BADA55;
   font-family: "Roboto Mono";
   font-weight: bold;
 }
 
 
 .home-glitch-container {
-  width: 50%;
-  border-left: 20px solid #282828;
-  margin-top: 18%;
+  width: 310px;
+  margin-top: 5%;
+  /*border: 5px solid #282828;*/
 }
 
 .home-glitch {
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .welcome-text {
-  margin-top: 4%;
-  width: 74%;
-  line-height: 2.9rem;
-  letter-spacing: -0.1rem;
-  font-size: 1.6rem;
+  margin-top: 10%;
+  width: 100%;
+  line-height: 1.8rem;
+  font-size: 1.4rem;
 }
-
-
 
 
 @keyframes noise-anim {
@@ -289,6 +229,7 @@ a {
   top: 0;
   color: white;
   background: #282828;
+  padding-left: 10px;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim 2s infinite linear alternate-reverse;
@@ -367,9 +308,88 @@ a {
   top: 0;
   color: white;
   background: #282828;
+  padding-left: 10px;
+
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+/* ========================================================
+  Media Queries
+==========================================================*/
+
+@media (min-width: 414px) {
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
+
+  /*.main-header {
+    flex-direction: column;
+    align-items: center;
+  }*/
+
+  .square {
+    margin-top: 2.2rem;
+  }
+}
+
+
+@media (min-width: 568px) {
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;  /* separate logo and nav items */
+    margin-top: 3.8rem;
+  }
+
+  .square {
+    margin-top: 110px;
+  }
+
+  .home-glitch-container {
+    width: 440px;
+    /*border-left: 20px solid #282828;*/
+    margin-top: 18%;
+  }
+
+  .home-glitch {
+    font-size: 55px;
+  }
+
+  .welcome-text {
+    margin-top: 4%;
+    width: 74%;
+    line-height: 2.9rem;
+    letter-spacing: -0.1rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media (min-width: 1000px) {
+
+  .main-nav a {
+    padding: 1rem;
+  }
+  .main-footer {
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    transform:rotateZ(-5deg);
+    transition: .4s linear;
+  }
+
+  .main-footer:hover {
+    transform:rotateZ(0deg);
+  }
+
+  .inner:hover {
+    border-bottom: 4px solid red;
+  }
+
 }
 
 
