@@ -55,7 +55,10 @@ h2 {
   width: 360px;
   border: 20px solid #282828;
   margin-bottom: 3.6rem;
+}
 
+.fa {
+  color: red;
 }
 
 /* ========================================================
