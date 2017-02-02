@@ -60,14 +60,14 @@ h2 {
 }
 
 .glitch-info {
-  width: 360px;
+  width: 365px;
   border: 20px solid #282828;
   margin-bottom: 2rem;
 }
 /* ========================================================
   Media Queries for info page container
 ==========================================================*/
-@media (max-width: 580px) {
+@media (max-width: 581px) {
   .glitch-box {
     display: none;
   }
