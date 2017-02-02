@@ -41,8 +41,6 @@ TweenMax.to(".rocket", 1, {
   }
 });
 
-
-
 // --------------------  Portfolio Page  -----------------------//
 // random letters
 
