@@ -68,7 +68,7 @@ a {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;                  /* set the sticky footer */
   flex-direction: column;
@@ -328,7 +328,7 @@ a {
   }
 
   .square {
-    margin-top: 2.8rem;
+    margin-top: 2.9rem;
   }
 
   .name {
@@ -386,13 +386,12 @@ a {
     margin-top: 4%;
     width: 98%;
     line-height: 4.2rem;
-    /*letter-spacing: -0.1rem;*/
     font-size: 1.3rem;
   }
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 
   .main-nav a {
     padding: 1.4rem;
@@ -401,7 +400,10 @@ a {
 
   .tl {
     font-size: 1.1rem;
-    letter-spacing: -0.02rem;
+  }
+
+  .square {
+    /*margin-top: 20%;*/
   }
 
   .main-footer {
@@ -415,9 +417,6 @@ a {
     transform:rotateZ(0deg);
   }
 
-  /*.inner:hover {
-    border-bottom: 4px solid red;
-  }*/
 }
 
 
