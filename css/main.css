@@ -31,26 +31,9 @@ a {
   Navigation
 ==========================================================*/
 
-.logo {
-  display: flex;
-}
-
-.logo:hover {
-  transform:rotateZ(8deg);
-}
-
-.tl {
-  font-size: 1rem;
-  font-weight: bold;
-  padding-left: 6px;
-  letter-spacing: -0.02rem;
-  color: #303030;
-}
-
 .name {
-  border-left: 2px solid #383838;
+  display: none;
 }
-
 /*  NAV links  */
 
 .main-nav a {
@@ -110,8 +93,9 @@ a {
 .main-footer {
   display: flex;
   justify-content: center;
-  padding-bottom: 1.4em;
-  margin-top: 4rem;
+  /*padding-bottom: 1.em;*/
+  margin-top: 2.4rem;
+
   font-family: monospace;
   font-size: 1.1rem;
 }
@@ -128,7 +112,7 @@ a {
 
 .glitch {
   color: white;
-  font-size: 2.9rem;
+  font-size: 2.8rem;
   position: relative;
   background-color: #282828;
   padding-left: 10px;
@@ -137,22 +121,20 @@ a {
   font-weight: bold;
 }
 
-
 .home-glitch-container {
-  width: 310px;
-  margin-top: 5%;
-  /*border: 5px solid #282828;*/
+  width: 210px;
+  margin-top: 2%;
 }
 
 .home-glitch {
-  font-size: 35px;
+  font-size: 2.7rem;
 }
 
 .welcome-text {
   margin-top: 10%;
   width: 100%;
   line-height: 1.8rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 
@@ -351,7 +333,6 @@ a {
 
   .home-glitch-container {
     width: 440px;
-    /*border-left: 20px solid #282828;*/
     margin-top: 18%;
   }
 
@@ -364,8 +345,33 @@ a {
     width: 74%;
     line-height: 2.9rem;
     letter-spacing: -0.1rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
+
+  .name {
+    display: inline-block;;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .logo:hover {
+    transform:rotateZ(8deg);
+  }
+
+  .tl {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 6px;
+    letter-spacing: -0.02rem;
+    color: #303030;
+  }
+
+  .name {
+    border-left: 2px solid #383838;
+  }
+
 
 }
 
