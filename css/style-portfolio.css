@@ -62,10 +62,10 @@
   font-size: 1.1rem;
   font-weight: bolder;
 }
-
+/*
 .square {
   border: none;
-}
+}*/
 
 .fa {
   color: #2a64f8;
@@ -85,7 +85,7 @@
   background-color: #303030;
   border-left: 8px solid #303030;
   border-radius: 1px;
-  /*font-family: monospace;*/
+  font-family: monospace;
   font-weight: bold;
 }
 
