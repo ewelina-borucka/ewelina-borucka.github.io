@@ -82,7 +82,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }
 
 .main-content {
@@ -116,8 +116,6 @@ a {
 }
 
 .fa {
-  width: 30px;
-  height: 30px;
   color: #BADA55;
 }
 
@@ -551,7 +549,7 @@ a {
     font-size: 1.1rem;
   }
 
-  /*.main-footer {
+  .main-footer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -565,7 +563,7 @@ a {
   .main-footer:hover {
     -webkit-transform:rotateZ(0deg);
             transform:rotateZ(0deg);
-  }*/
+  }
 
 }
 
