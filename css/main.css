@@ -74,6 +74,7 @@ a {
 .container {
   width: 90%;
   max-width: 1100px;
+  min-height: 100vh;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,7 +83,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /*min-height: 100vh;*/
 }
 
 .main-content {
@@ -91,13 +91,9 @@ a {
           flex: 1;                        /* set the sticky footer */
 }
 
-/*.square {
-  border: 1px solid black;
-}*/
-
-/*.square {
-  border: none;
-}*/
+.square {
+  border: 1px solid white;
+}
 
 /* ========================================================
   Footer
@@ -110,13 +106,15 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*margin-top: 3rem;*/
   font-family: monospace;
   font-size: 0.9rem;
+  flex: 1;
+
 }
 
 .fa {
   color: #BADA55;
+  margin-right: 0.5rem;
 }
 
 /* ========================================================
@@ -515,11 +513,10 @@ a {
     font-size: 0.9rem;
     letter-spacing: -0.02rem;
   }
-
+/*
   .square {
     margin-top: 10%;
-  }
-
+  }*/
 
   .home-glitch-container {
     width: 99%;
@@ -553,11 +550,14 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    font-size: 1rem;
+    font-size: 1.1rem;
     -webkit-transform:rotateZ(-5deg);
             transform:rotateZ(-5deg);
     -webkit-transition: .4s linear;
     transition: .4s linear;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    flex: 1;
   }
 
   .main-footer:hover {
@@ -568,11 +568,12 @@ a {
 }
 
 
+
 /* ========================================================
   ROCKET Animation
 ==========================================================*/
 
-/*.rocket {
+.rocket {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -588,4 +589,4 @@ a {
 50% { transform: translateY(30px) rotate(300deg);
 }
 100% { transform: translateY(0%) rotate(0deg); }
-}*/
+}

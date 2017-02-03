@@ -1,17 +1,3 @@
-.wrapper {
-  border-right: 8px solid red;
-}
-
-.main-nav a:hover {
-  font-weight: bold;
-  border-bottom: 4px solid red;
-}
-
-.main-nav a.selected {
-  font-weight: bold;
-  color: red;
-}
-
 h2 {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -54,20 +40,16 @@ h2 {
   line-height: 2.2rem;
 }
 
-.square {
+/*.square {
   border: none;
-}
-
-.fa {
-  color: red;
-  opacity: 0.8;
-}
+}*/
 
 .glitch-info {
   width: 365px;
   border: 20px solid #282828;
   margin-bottom: 2rem;
 }
+
 /* ========================================================
   Media Queries for info page container
 ==========================================================*/
@@ -80,10 +62,8 @@ h2 {
 @media (min-width: 580px) {
   .highlight {
     padding: 4px;
-    background-color: red;
-    opacity: 0.8;
-    border-radius: 1px;
-    color: ghostwhite;
+    background-color: #BADA55;
+    border-radius: 1.5px;
     font-weight: bold;
   }
 }

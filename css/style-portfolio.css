@@ -1,4 +1,4 @@
-.wrapper {
+/*.wrapper {
   border-right: 8px solid #2a64f8;
 }
 
@@ -10,7 +10,7 @@
 .main-nav a.selected {
   font-weight: bold;
   color: #2a64f8;
-}
+}*/
 
 .boxes {
   display: -webkit-box;
@@ -30,7 +30,7 @@
 }
 
 .projectBox {
-  border: 8px solid #2a64f8;
+  border: 8px solid #BADA55;
   border-radius: 1px;
   width: 200px;
   height: 200px;
@@ -45,7 +45,7 @@
   width: 200px;
   height: 200px;
   background-color: #2a64f8;
-  opacity: 0.9;
+  background-color: #BADA55;
 }
 
 .number {
@@ -67,9 +67,6 @@
   border: none;
 }*/
 
-.fa {
-  color: #2a64f8;
-}
 
 /* ========================================================
   GLITCH for project boxes
