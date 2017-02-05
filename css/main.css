@@ -45,7 +45,7 @@ a {
   -webkit-box-direction: reverse;
       -ms-flex-flow: row-reverse;
           flex-flow: row-reverse;
-  padding: 0.8rem;
+  padding-bottom: 1rem;
 }
 
 .main-nav a {
@@ -478,6 +478,11 @@ a {
             justify-content: space-between;
   }
 
+  .main-nav a {
+    padding: 0.9rem;
+
+  }
+
   .square {
     padding-top: 5rem;
   }
@@ -516,11 +521,16 @@ a {
   .welcome-text-2 {
     display: inherit;
     font-size: 1.1rem;
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.06rem;
   }
 
   .home-glitch-container {
     width: 55%;
+  }
+
+  .main-footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
 }
