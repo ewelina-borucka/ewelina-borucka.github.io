@@ -35,11 +35,11 @@ touch.staggerTo(".contact", 2, {y: 30, ease: Bounce.easeOut}, 0.4);
 // ------------------------  Home Page  -----------------------//
 
 
-// TweenMax.to(".rocket", 1, {
-//   x: function(index, target) {
-//     return (index + 3) * 100;
-//   }
-// });
+TweenMax.to(".rocket", 2, {
+  x: function(index, target) {
+    return (index + 3) * 100;
+  }
+});
 
 // --------------------  Portfolio Page  -----------------------//
 // random letters

@@ -596,16 +596,31 @@ a {
   }*/
 }
 
+@media screen
+  and (min-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+
+		.square {
+			margin-top: 5rem;
+		}
+
+		.glitch {
+			font-size: 2.7rem;
+			padding-left: 10px;
+		}
+
+}
 
 /* ========================================================
   ROCKET Animation
 ==========================================================*/
 
 .rocket {
-	width: 50px;
-	height: 50px;
+	width: 2rem;
+	height: 2rem;
 	position: absolute;
-	top: 52%;
+	top: 10%;
 	right: 50%;
 	opacity: 0.9;
 }
