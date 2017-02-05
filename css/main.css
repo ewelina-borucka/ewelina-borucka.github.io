@@ -535,6 +535,25 @@ a {
 
 }
 
+/* Landscape */
+@media only screen
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .square {
+      padding-top: 2rem;
+    }
+    .welcome-text-2 {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+    .glitch {
+      font-size: 2.2rem;
+    }
+
+}
+
+
 @media (min-width: 708px) {
 
   .main-header {
