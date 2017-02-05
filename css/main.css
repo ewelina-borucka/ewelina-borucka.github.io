@@ -94,8 +94,7 @@ a {
 .main-content {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
-	flex: 1;
-	/* set the sticky footer */
+	flex: 1;                /* set the sticky footer */
 }
 
 .square {
@@ -497,6 +496,7 @@ a {
 	.name {
 		display: inline-block;
 		font-family: monospace;
+		border-left: 2px solid #303030;
 	}
 	.logo {
 		display: -webkit-box;
@@ -513,9 +513,6 @@ a {
 		letter-spacing: -0.04rem;
 		color: #303030;
 	}
-	.name {
-		border-left: 2px solid #303030;
-	}
 	.welcome-text-1 {
 		display: none;
 	}
@@ -530,7 +527,7 @@ a {
 	}
 	.main-footer {
 		padding-top: 2rem;
-		padding-bottom: 2rem;
+		/*padding-bottom: 2rem;*/
 	}
 }
 
@@ -561,8 +558,7 @@ a {
 		flex-direction: row;
 		-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
-		justify-content: space-between;
-		/* separate logo and nav items */
+		justify-content: space-between;    /* separate logo and nav items */
 		margin-top: 2rem;
 	}
 	.home-glitch {
@@ -582,9 +578,9 @@ a {
 		padding-top: 6rem;
 	}
 	.main-footer {
-		-webkit-box-pack: end;
+		/*-webkit-box-pack: end;
 		-ms-flex-pack: end;
-		justify-content: flex-end;
+		justify-content: flex-end;*/
 		/*-webkit-transform:rotateZ(-5deg);
     transform:rotateZ(-5deg);
     -webkit-transition: .4s linear;
@@ -601,13 +597,29 @@ a {
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
 
+		.main-header {
+			margin-top: 4rem;
+		}
+
 		.square {
 			margin-top: 5rem;
+		}
+
+		.main-nav a {
+			font-size: 1.4rem;
+		}
+
+		.tl {
+			font-size: 1.2rem;
 		}
 
 		.glitch {
 			font-size: 2.7rem;
 			padding-left: 10px;
+		}
+
+		.main-footer {
+			font-size: 1.1rem;
 		}
 
 }
