@@ -464,7 +464,7 @@ a {
   }
 
   .square {
-    margin-top: 2.9rem;
+    margin-top: 6rem;
   }
 
   .name {
@@ -519,7 +519,7 @@ a {
   }*/
 
   .home-glitch-container {
-    width: 99%;
+    width: 100%;
   }
 
   .home-glitch {
@@ -527,7 +527,6 @@ a {
   }
 
   .welcome-text {
-    margin-top: 4%;
     width: 98%;
     line-height: 4.2rem;
     font-size: 1.3rem;
@@ -566,7 +565,6 @@ a {
   }
 
 }
-
 
 
 /* ========================================================
