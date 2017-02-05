@@ -64,9 +64,8 @@ function randomChar(type){
 $.fn.shuffleLetters = function(prop){
 
 	var options = $.extend({
-		"step"	: 10,	// How many times should the letters be changed
+		"step"	: 5,	// How many times should the letters be changed
 		"fps"	: 25,	// Frames Per Second
-		// "text"	: "" 	// Use this text instead of the contents
 	}, prop);
 
 	return this.each(function(){

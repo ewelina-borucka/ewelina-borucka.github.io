@@ -57,18 +57,17 @@
   GLITCH for project boxes
 ==========================================================*/
 .glitch-box {
-  width: 220px;
+  width: 210px;
 }
 
 .glitch {
   color: white;
-  font-size: 2.1rem;
+  font-size: 2rem;
   position: relative;
   background-color: #303030;
-  border-left: 8px solid #303030;
+  border-left: 4px solid #303030;
   border-radius: 1px;
-  font-family: monospace;
-  font-weight: bold;
+
 }
 
 @-webkit-keyframes noise-anim {
