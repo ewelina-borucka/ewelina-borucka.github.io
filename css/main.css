@@ -125,7 +125,7 @@ a {
 
 .glitch {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   position: relative;
   background-color: #282828;
   padding-left: 10px;
@@ -138,9 +138,9 @@ a {
   width: 100%;
 }
 
-.home-glitch {
-  /*font-size: 2.3rem;*/
-}
+/*.home-glitch {
+  font-size: 2.3rem;
+}*/
 
 @-webkit-keyframes noise-anim {
   0% {
@@ -461,7 +461,6 @@ a {
 
 
 @media (min-width: 600px) {
-
   .main-header,
   .main-nav {
     display: -webkit-box;
@@ -480,7 +479,6 @@ a {
 
   .main-nav a {
     padding: 0.9rem;
-
   }
 
   .square {
@@ -525,7 +523,9 @@ a {
   }
 
   .home-glitch-container {
-    width: 55%;
+    width: 365px;
+    border: 4px solid #282828;
+    width: 365px;
   }
 
   .main-footer {
@@ -535,7 +535,7 @@ a {
 
 }
 
-/* Landscape */
+/* ------------ Landscape ------------ */
 @media only screen
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -543,14 +543,15 @@ a {
     .square {
       padding-top: 2rem;
     }
+
     .welcome-text-2 {
       font-size: 1rem;
       line-height: 2rem;
     }
+
     .glitch {
       font-size: 2.2rem;
     }
-
 }
 
 
