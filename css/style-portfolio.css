@@ -1,73 +1,74 @@
-.boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.twoBoxes {
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-flow: column;
 }
 
 .box {
-  height: 300px;
-  width: 300px;
-  margin: 10px;
   position: relative;
 }
 
 .projectBox {
-  border: 10px solid #BADA55;
+  background-color: #BADA55;
   border-radius: 2px;
-  width: 240px;
-  height: 240px;
+  width: 11rem;
+  height: 11rem;
   margin: auto;
+
+
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
   cursor: pointer;
 }
 
-.projectBox:hover {
-  border-radius: 50%;
-  width: 240px;
-  height: 240px;
-  background-color: #BADA55;
+.description {
+  text-align: center;
+  padding: 0.6rem;
+  margin: auto;
 }
 
-.number {
-  position: absolute;
-  top: 25px;
-  left: -11px;
-  z-index: 3;
+p {
+  font-size: 0.9rem;
 }
 
-.title {
-  position: absolute;
-  top: 220px;
-  left: 40px;
-  font-size: 1.2rem;
-  font-weight: bolder;
-}
-
-.square {
-  border: none;
+h4 {
+  margin-top: 0.5rem;
 }
 
 
 /* ========================================================
   GLITCH for project boxes
 ==========================================================*/
+
+.title,
+.number {
+  position: relative;
+  /*left: 2rem;*/
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.number {
+  top: 1.5rem;
+}
+
 .glitch-box {
-  width: 210px;
+  width: 10rem;
+  position: absolute;
 }
 
 .glitch {
   color: white;
-  font-size: 2rem;
+  font-size: 1.4rem;
   position: relative;
-  background-color: #303030;
-  border-left: 4px solid #303030;
+  background-color: #282828;
+  border-left: 8px solid #282828;
   border-radius: 1px;
+}
 
+.glitch-portfolio {
+  border: 0.5rem solid #282828;
 }
 
 @-webkit-keyframes noise-anim {
@@ -208,7 +209,7 @@
   text-shadow: -2px 0 red;
   top: 0;
   color: white;
-  background: #303030;
+  background: #282828;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   -webkit-animation: noise-anim 2s infinite linear alternate-reverse;
@@ -353,9 +354,55 @@
   text-shadow: 3px 0 blue;
   top: 0;
   color: white;
-  background: #303030;
+  background: #282828;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   -webkit-animation: noise-anim-2 3s infinite linear alternate-reverse;
           animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+/* ========================================================
+  Media Queries
+==========================================================*/
+
+@media only screen
+  and (min-device-width: 668px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .twoBoxes {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      padding-left: 5rem;
+    }
+
+    .projectBox {
+
+      /*-webkit-transition: all .2s ease-in-out;
+      transition: all .1s ease-in-out;*/
+    }
+
+    /*.projectBox:hover {
+      width: 12.5rem;
+      height: 12.5rem;
+      border-radius: 50%;
+    }*/
+
+    .description {
+      width: 60%;
+      padding-left: 5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+
+    .language {
+      font-size: 0.8rem;
+    }
+
 }

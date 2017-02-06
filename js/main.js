@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------//
+// ------------------------------  TweenMax  ------------------------------//
+// -----------------------------------------------------------------------//
+
 
 // ------------------------  Info Page  -----------------------//
 
@@ -31,14 +35,17 @@ touch.staggerTo(".contact", 2, {y: 30, ease: Bounce.easeOut}, 0.4);
 // ------------------------  Home Page  -----------------------//
 
 
-TweenMax.to(".rocket", 2, {
-  x: function(index, target) {
-    return (index + 3) * 100;
-  }
-});
+// TweenMax.to(".twoBoxes", 1, {
+//   x: function(index, target) {
+//     return (index - 3) * 10;
+//   }
+// });
+
+TweenMax.staggerFrom(".twoBoxes", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+
 
 // --------------------  Portfolio Page  -----------------------//
-// MARTIX random letters
+// random letters
 
 function randomChar(type){
 	var pool = "";
@@ -60,8 +67,9 @@ function randomChar(type){
 $.fn.shuffleLetters = function(prop){
 
 	var options = $.extend({
-		"step"	: 5,	// How many times should the letters be changed
-		"fps"	: 40,	// Frames Per Second
+		"step"	: 10,	// How many times should the letters be changed
+		"fps"	: 25,	// Frames Per Second
+		// "text"	: "" 	// Use this text instead of the contents
 	}, prop);
 
 	return this.each(function(){
@@ -76,11 +84,15 @@ $.fn.shuffleLetters = function(prop){
 			str = el.text().split('');
 		}
 
+		// The types array holds the type for each character;
+		// Letters holds the positions of non-space characters;
+
 		var types = [],
 			letters = [];
 
 		// Looping through all the chars of the string
 		for(var i = 0; i < str.length; i += 1){
+
 			var ch = str[i];
 
 			if(ch == " "){
@@ -105,11 +117,14 @@ $.fn.shuffleLetters = function(prop){
 		// Self executing named function expression:
 		(function shuffle(start){
 
-			var i,
-					len = letters.length,
-					strCopy = str.slice(0);	// Fresh copy of the string
+			// This code is run options.fps times per second
+			// and updates the contents of the page element
 
-			if(start > len){
+			var i,
+				len = letters.length,
+				strCopy = str.slice(0);	// Fresh copy of the string
+
+			if(start>len){
 				return;
 			}
 
@@ -143,10 +158,11 @@ $.fn.shuffleLetters = function(prop){
 
 
 var shiftChars = function( el ){
+	// container is the DOM element;
+	// userText is the textbox
 
 	var container = $( el );
-		var userText = container.text();
-
+		userText = $( $thisText );
 
 	// Shuffle the contents of container
 	container.shuffleLetters();
@@ -154,7 +170,7 @@ var shiftChars = function( el ){
 	setTimeout(function(){
 		// Shuffle the container with custom text
 		container.shuffleLetters({
-			"text": userText
+			"text": $thisText
 		});
 
 	},1000);
