@@ -35,11 +35,17 @@ touch.staggerTo(".contact", 2, {y: 30, ease: Bounce.easeOut}, 0.4);
 // ------------------------  Home Page  -----------------------//
 
 
-// TweenMax.to(".rocket", 1, {
+// TweenMax.to(".twoBoxes", 1, {
 //   x: function(index, target) {
-//     return (index + 3) * 100;
+//     return (index - 3) * 10;
 //   }
 // });
+
+TweenMax.staggerFrom(".twoBoxes", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+
+$(".twoBoxes").click(function(){
+  TweenMax.staggerTo(".btn", 0.5, {opacity:0, y:-100, ease:Back.easeIn}, 0.1);
+});
 
 // --------------------  Portfolio Page  -----------------------//
 // random letters

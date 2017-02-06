@@ -1,26 +1,20 @@
 
-.boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.twoBoxes {
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-between;
-
+  flex-flow: column;
 }
 
 .box {
   position: relative;
-
 }
 
 .projectBox {
-  border: 4px solid #BADA55;
   background-color: #BADA55;
-  width: 10rem;
-  height: 10rem;
+  border-radius: 2px;
+  width: 11rem;
+  height: 11rem;
   margin: auto;
+
 
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
@@ -28,37 +22,41 @@
 }
 
 .description {
-  flex: 1;
   text-align: center;
-  /*border: 1px solid black;*/
-
+  padding: 0.6rem;
+  margin: auto;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
+
+h4 {
+  margin-top: 0.5rem;
+}
+
 
 /* ========================================================
   GLITCH for project boxes
 ==========================================================*/
 
-.title {
-  top: 6rem;
-  font-size: 1rem;
-}
-
-.number {
-  top: 1rem;
-}
-
 .title,
 .number {
-  position: absolute;
-  left: 5rem;
+  position: relative;
+  /*left: 2rem;*/
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.number {
+  top: 1.5rem;
 }
 
 .glitch-box {
   width: 10rem;
+  position: absolute;
 }
 
 .glitch {
@@ -68,6 +66,10 @@ p {
   background-color: #282828;
   border-left: 8px solid #282828;
   border-radius: 1px;
+}
+
+.glitch-portfolio {
+  border: 0.5rem solid #282828;
 }
 
 @-webkit-keyframes noise-anim {
@@ -365,16 +367,43 @@ p {
   Media Queries
 ==========================================================*/
 
-@media (min-width: 667px) {
-  .twoBoxes {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-  }
+@media only screen
+  and (min-device-width: 668px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .twoBoxes {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2rem;
+    }
 
-  .description,
-  .box {
-    flex: 1;
-    justify-content: space-between;
-  }
+    .box {
+      padding-left: 5rem;
+    }
+
+    .projectBox {
+    
+      /*-webkit-transition: all .2s ease-in-out;
+      transition: all .1s ease-in-out;*/
+    }
+
+    /*.projectBox:hover {
+      width: 12.5rem;
+      height: 12.5rem;
+      border-radius: 50%;
+    }*/
+
+    .description {
+      width: 60%;
+      padding-left: 5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+
+    .language {
+      font-size: 0.8rem;
+    }
+
 }
