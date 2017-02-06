@@ -1,6 +1,3 @@
-// -----------------------------------------------------------------------//
-// ------------------------------  TweenMax  ------------------------------//
-// -----------------------------------------------------------------------//
 
 // ------------------------  Info Page  -----------------------//
 
@@ -41,7 +38,7 @@ TweenMax.to(".rocket", 2, {
 });
 
 // --------------------  Portfolio Page  -----------------------//
-// random letters
+// MARTIX random letters
 
 function randomChar(type){
 	var pool = "";
@@ -64,7 +61,7 @@ $.fn.shuffleLetters = function(prop){
 
 	var options = $.extend({
 		"step"	: 5,	// How many times should the letters be changed
-		"fps"	: 25,	// Frames Per Second
+		"fps"	: 40,	// Frames Per Second
 	}, prop);
 
 	return this.each(function(){
@@ -79,15 +76,11 @@ $.fn.shuffleLetters = function(prop){
 			str = el.text().split('');
 		}
 
-		// The types array holds the type for each character;
-		// Letters holds the positions of non-space characters;
-
 		var types = [],
 			letters = [];
 
 		// Looping through all the chars of the string
 		for(var i = 0; i < str.length; i += 1){
-
 			var ch = str[i];
 
 			if(ch == " "){
@@ -112,14 +105,11 @@ $.fn.shuffleLetters = function(prop){
 		// Self executing named function expression:
 		(function shuffle(start){
 
-			// This code is run options.fps times per second
-			// and updates the contents of the page element
-
 			var i,
-				len = letters.length,
-				strCopy = str.slice(0);	// Fresh copy of the string
+					len = letters.length,
+					strCopy = str.slice(0);	// Fresh copy of the string
 
-			if(start>len){
+			if(start > len){
 				return;
 			}
 
@@ -153,11 +143,10 @@ $.fn.shuffleLetters = function(prop){
 
 
 var shiftChars = function( el ){
-	// container is the DOM element;
-	// userText is the textbox
 
 	var container = $( el );
-		userText = $( $thisText );
+		var userText = container.text();
+
 
 	// Shuffle the contents of container
 	container.shuffleLetters();
@@ -165,7 +154,7 @@ var shiftChars = function( el ){
 	setTimeout(function(){
 		// Shuffle the container with custom text
 		container.shuffleLetters({
-			"text": $thisText
+			"text": userText
 		});
 
 	},1000);
