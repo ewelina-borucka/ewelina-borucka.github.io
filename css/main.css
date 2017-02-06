@@ -572,19 +572,19 @@ a {
 	.square-home {
 		padding-top: 6rem;
 	}
-	.main-footer {
-		/*-webkit-box-pack: end;
+	.kuku-home {
+		-webkit-box-pack: end;
 		-ms-flex-pack: end;
-		justify-content: flex-end;*/
-		/*-webkit-transform:rotateZ(-5deg);
-    transform:rotateZ(-5deg);
+		justify-content: flex-end;
+		-webkit-transform:rotateZ(-4deg);
+    transform:rotateZ(-4deg);
     -webkit-transition: .4s linear;
-    transition: .4s linear;*/
+    transition: .4s linear;
 	}
-	/*.main-footer:hover {
+	.kuku-home:hover {
     -webkit-transform:rotateZ(0deg);
     transform:rotateZ(0deg);
-  }*/
+  }
 }
 
 @media screen
