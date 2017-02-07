@@ -1,5 +1,10 @@
 .twoBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
   flex-flow: column;
 }
 
@@ -13,10 +18,6 @@
   width: 11rem;
   height: 11rem;
   margin: auto;
-
-
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
   cursor: pointer;
 }
 
@@ -27,11 +28,16 @@
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 h4 {
-  margin-top: 0.5rem;
+  margin: 0;
+}
+
+.language {
+  font-size: 0.8rem;
+  padding-bottom: 1.4rem;
 }
 
 
@@ -39,14 +45,14 @@ h4 {
   GLITCH for project boxes
 ==========================================================*/
 
-.title,
 .number {
   position: relative;
-  /*left: 2rem;*/
+  left: 2rem;
 }
 
 .title {
   font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 .number {
@@ -213,7 +219,7 @@ h4 {
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   -webkit-animation: noise-anim 2s infinite linear alternate-reverse;
-          animation: noise-anim 2s infinite linear alternate-reverse;
+  animation: noise-anim 2s infinite linear alternate-reverse;
 }
 
 @-webkit-keyframes noise-anim-2 {
@@ -358,7 +364,7 @@ h4 {
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   -webkit-animation: noise-anim-2 3s infinite linear alternate-reverse;
-          animation: noise-anim-2 3s infinite linear alternate-reverse;
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
 
@@ -370,7 +376,12 @@ h4 {
   and (min-device-width: 668px)
   and (-webkit-min-device-pixel-ratio: 1) {
     .twoBoxes {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
       margin-bottom: 2rem;
     }
@@ -379,30 +390,26 @@ h4 {
       padding-left: 5rem;
     }
 
-    .projectBox {
-
-      /*-webkit-transition: all .2s ease-in-out;
-      transition: all .1s ease-in-out;*/
-    }
-
-    /*.projectBox:hover {
-      width: 12.5rem;
-      height: 12.5rem;
-      border-radius: 50%;
-    }*/
-
-    .description {
-      width: 60%;
-      padding-left: 5rem;
+    .square-portfolio {
+      margin-top: 1rem;
     }
 
     p {
-      font-size: 1.2rem;
-      margin-top: 0;
+      font-size: 1.1rem;
+      margin-top: 0.4rem;
     }
 
     .language {
-      font-size: 0.8rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .number {
+      left: -1rem;
     }
 
 }
