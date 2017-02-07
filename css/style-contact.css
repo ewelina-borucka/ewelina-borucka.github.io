@@ -106,9 +106,17 @@ h2 {
 		font-size: 1.2rem;
 		line-height: 2rem;
 	}
-	.secondary h2 {
-		margin-bottom: 2.2rem;
+
+	.skills h2 {
+		margin-bottom: 1.4rem;
 	}
+
+	.contact {
+		margin-top: 6rem;
+		padding: 2rem;
+	}
+
+
 	.highlight {
 		/*padding: 4px;
 		background-color: #BADA55;

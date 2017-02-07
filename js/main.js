@@ -1,21 +1,5 @@
-// -----------------------------------------------------------------------//
-// ------------------------------  TweenMax  ------------------------------//
-// -----------------------------------------------------------------------//
 
-
-// ------------------------  Info Page  -----------------------//
-
-TweenLite.set(".secondary", {visibility: "visible"});
-var tl = new TimelineMax();
-
-tl.staggerFrom(".skills li", 0.9, {
-  opacity: 0,
-  cycle: {
-    rotationX: [-90, 90],
-    transformOrigin: ["50% top -100", "50% bottom 100"]
-  }
-}, 0.4);
-
+// ------------------------  GENERAL  -----------------------//
 TweenLite.set(".main-header", {visibility: "visible"});
 var tl = new TimelineMax();
 
@@ -27,10 +11,25 @@ tl.staggerFrom(".main-nav li", 0.9, {
   }
 }, 0.1);
 
+// ------------------------  Info Page  -----------------------//
 
 
-var touch = new TimelineMax({reapet: 1, reapetDelay: 1});
-touch.staggerTo(".contact", 2, {y: 30, ease: Bounce.easeOut}, 0.4);
+TweenLite.set(".secondary", {visibility: "visible"});
+var tl = new TimelineMax();
+
+tl.staggerFrom(".skills li", 0.8, {
+  opacity: 0,
+  cycle: {
+    rotationX: [-90, 90],
+    transformOrigin: ["50% top -100", "50% bottom 100"]
+  }
+}, 0.4);
+
+// var touch = new TimelineMax({reapet: 1, reapetDelay: 1});
+// touch.staggerTo(".contact", 2, {y: 30, ease: Bounce.easeOut}, 0.4);
+
+TweenMax.staggerFrom(".contact", 2, {scale:0.5, opacity:0, delay:2, ease:Elastic.easeOut, force3D:true}, 0.2);
+
 
 // ------------------------  Home Page  -----------------------//
 
