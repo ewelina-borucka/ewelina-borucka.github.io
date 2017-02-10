@@ -395,8 +395,8 @@ h4 {
     }
 
     p {
-      font-size: 1.1rem;
-      margin-top: 0.4rem;
+      font-size: 1rem;
+      margin-top: 0.2rem;
     }
 
     .language {
@@ -413,3 +413,19 @@ h4 {
     }
 
 }
+
+@media only screen
+  and (min-device-width: 968px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .description {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 0.2rem;
+    }
+
+  }
