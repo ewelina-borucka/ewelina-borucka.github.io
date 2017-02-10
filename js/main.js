@@ -40,7 +40,7 @@ TweenMax.staggerFrom(".contact", 2, {scale:0.5, opacity:0, delay:2, ease:Elastic
 //   }
 // });
 
-TweenMax.staggerFrom(".twoBoxes", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+TweenMax.staggerFrom(".description", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
 
 TweenMax.staggerFrom(".kuku", 2, {scale:0.5, opacity:0, delay:0.8, ease:Elastic.easeOut, force3D:true}, 0.2);
 
