@@ -27,6 +27,9 @@ a {
 	color: #282828;
 }
 
+::-webkit-scrollbar {display:none;}
+
+
 .main-header {
 	margin-top: 1.5rem;
 }
@@ -487,7 +490,6 @@ a {
 	.square {
 		margin-top: 4rem;
 		padding-top: 5rem;
-		border: 1px solid red;
 	}
 
 	.name {
@@ -530,6 +532,7 @@ a {
 
 	.main-footer {
 		padding-top: 2rem;
+		padding-bottom: 4rem;
 	}
 }
 
