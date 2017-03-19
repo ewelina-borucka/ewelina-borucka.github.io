@@ -1,56 +1,70 @@
+
+/* ========================================================
+  Base Element Styles
+==========================================================*/
+
 h2 {
-text-transform: uppercase;
-font-size: 1.5rem;
-margin: 0;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin: 0;
 }
 
 .row {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
--ms-flex-direction: column;
-flex-direction: column;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 .column {
-font-size: 1rem;
+	font-size: 1rem;
 }
 
 .intro {
-line-height: 1.6rem;
+	line-height: 1.6rem;
+}
+
+.me p:first-child {
+	margin-top: 0.4rem;
 }
 
 .contact {
-border: 2px solid #303030;
-border-radius: 2px;
-padding: 8px;
-text-align: center;
-margin-bottom: 3rem;
+	border: 2px solid #303030;
+	border-radius: 2px;
+	padding: 8px;
+	text-align: center;
+	margin: 2rem 0;
 }
 
 .contact a {
-color: #303030;
-line-height: 1.8rem;
+	color: #303030;
+	line-height: 1.8rem;
 }
 
 .skills {
-line-height: 2.2rem;
+	line-height: 2.2rem;
 }
 
 .square {
-border: none;
+	border: none;
+	margin-top: 0;
 }
 
 .glitch-info {
-width: 365px;
-border: 14px solid #303030;
-margin-bottom: 2rem;
+	width: 365px;
+	border: 14px solid #303030;
+	margin-bottom: 2rem;
+}
+
+.main-footer {
+	padding-bottom: 1rem;
 }
 
 .fa {
-color: #bada55;
+	color: #bada55;
 }
 
 
@@ -59,41 +73,61 @@ Media Queries
 ==========================================================*/
 
 @media (max-width: 581px) {
-.glitch-box {
-	display: none;
-}
+	.glitch-box {
+		display: none;
+	}
 }
 
 @media (min-width: 580px) {
-.highlight {
-	font-weight: bold;
-	text-decoration: underline;
-}
-.square {
-	margin-top: 0;
-}
+	.highlight {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	.square {
+		margin-top: 0;
+	}
+
+	.intro h2 {
+		display: none;
+	}
+
+	.skills h2 {
+		font-size: 2rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
 }
 
 @media (min-width: 1024px) {
-.row {
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-}
-.square {
-	margin-top: 5rem;
-}
-.column {
-	text-align: justify;
-}
-.intro {
-	padding-right: 10rem;
-	line-height: 1.6rem;
-}
-.contact {
-	margin-top: 2.6rem;
-}
+	.row {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+	.square {
+		margin-top: 2rem;
+	}
+
+	.column {
+		text-align: justify;
+	}
+
+	.intro {
+		padding-right: 10rem;
+		line-height: 1.6rem;
+	}
+
+	.contact {
+		margin-top: 2.6rem;
+	}
+
+	.skills li {
+		margin-bottom: 1rem;
+	}
 }
 
 
@@ -106,18 +140,17 @@ and (-webkit-min-device-pixel-ratio: 2), screen
 and (min-device-width: 1200px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (min-resolution: 192dpi) {
-.container {
-	max-width: 1300px;
-}
-.intro, .skills {
-	font-size: 1.2rem;
-	line-height: 2rem;
-}
-.skills h2 {
-	margin-bottom: 1.4rem;
-}
-.contact {
-	margin-top: 6rem;
-	padding: 2rem;
-}
+	.container {
+		max-width: 1300px;
+	}
+
+	.intro, .skills {
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+
+	.contact {
+		margin-top: 3rem;
+		padding: 2rem;
+	}
 }
