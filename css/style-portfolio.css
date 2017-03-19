@@ -7,11 +7,6 @@
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
   flex-flow: column;
-  border: 1px solid red;
-}
-
-.box {
-  position: relative;
 }
 
 .projectBox {
@@ -42,8 +37,7 @@ h4 {
   padding-bottom: 1.4rem;
 }
 
-::-webkit-scrollbar {display:none;}
-
+/*::-webkit-scrollbar {display:none;}*/
 
 
 /* ========================================================
@@ -52,7 +46,7 @@ h4 {
 
 .number {
   position: relative;
-  left: 2rem;
+  left: 20%;
 }
 
 .title {
@@ -378,7 +372,7 @@ h4 {
 ==========================================================*/
 
 @media only screen
-  and (min-device-width: 668px)
+  and (min-device-width: 640px)
   and (-webkit-min-device-pixel-ratio: 1) {
     .twoBoxes {
       display: -webkit-box;
@@ -392,17 +386,17 @@ h4 {
       margin-bottom: 2rem;
     }
 
-    .box {
-      padding-left: 5rem;
-    }
-
     .square-portfolio {
-      margin-top: 1rem;
+      margin-top: 0;
     }
 
     p {
-      font-size: 1rem;
-      margin-top: 0.2rem;
+      font-size: 1.1rem;
+      margin-top: 0.4rem;
+    }
+
+    .description {
+      padding-left: 2rem;
     }
 
     .language {
@@ -423,6 +417,12 @@ h4 {
 @media only screen
   and (min-device-width: 968px)
   and (-webkit-min-device-pixel-ratio: 1) {
+
+    .projectBox {
+      width: 11rem;
+      height: 11rem;
+
+    }
 
     .description {
       padding-left: 5rem;
