@@ -31,10 +31,6 @@ a {
 	margin-top: 1.5rem;
 }
 
-/*.rocket {
-	display: none;
-}*/
-
 
 /* ========================================================
   Navigation
@@ -78,6 +74,7 @@ a {
 
 .wrapper {
 	border-right: 0.6rem solid #BADA55;
+	margin: auto;
 }
 
 .container {
@@ -101,7 +98,6 @@ a {
 }
 
 .square {
-	border: 1px solid white;
 	margin-top: 1.4rem;
 }
 
@@ -471,7 +467,8 @@ a {
 }
 
 @media (min-width: 600px) {
-	.main-header, .main-nav {
+	.main-header,
+	.main-nav {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -488,39 +485,49 @@ a {
 		padding: 0.9rem;
 	}
 	.square {
+		margin-top: 4rem;
 		padding-top: 5rem;
+		border: 1px solid red;
 	}
+
 	.name {
 		display: inline-block;
 		font-family: monospace;
 		border-left: 2px solid #303030;
 	}
+
 	.logo {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 	}
+
 	.logo:hover {
 		-webkit-transform: rotateZ(8deg);
 		transform: rotateZ(8deg);
 	}
+
 	.tl {
 		font-size: 1rem;
 		padding-left: 6px;
 		letter-spacing: -0.04rem;
 		color: #303030;
 	}
+
 	.welcome-text-1 {
 		display: none;
 	}
+
 	.welcome-text-2 {
 		display: inherit;
 		font-size: 1.2rem;
 		letter-spacing: -0.06rem;
 	}
+
 	.home-glitch-container {
 		border: 4px solid #303030;
 	}
+
 	.main-footer {
 		padding-top: 2rem;
 	}
@@ -531,7 +538,7 @@ a {
 
 @media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 	.square {
-		padding-top: 2rem;
+		padding-top: 0.4rem;
 	}
 	.welcome-text-2 {
 		font-size: 1rem;
@@ -619,17 +626,22 @@ a {
 		.main-footer {
 			font-size: 1.1rem;
 		}
+
 		.square-home {
-			width: 80%;
-			margin: 4rem auto;
+			margin: 6rem auto;
 		}
+
+		.welcome-text-2 {
+			font-size: 1.4rem;
+			letter-spacing: 0.02rem;
+		}
+
 		.skills-home {
 			margin-top: 3rem;
 		}
 
 		.skills-home h2 {
 			font-size: 1.3rem;
-			/*text-transform: uppercase;*/
 			margin-bottom: 0;
 			font-weight: lighter;
 		}
@@ -638,81 +650,6 @@ a {
 			font-size: 1.2rem;
 			border-left: 0.2rem solid #BADA55;
 			padding-left: 0.4rem;
-
-
 		}
-
-		/*.rocket {
-			display: inherit;
-		    position: absolute;
-		    top: 50%;
-		    right: 80%;
-		    animation: floating 4s infinite ease-in-out;
-		    opacity: 0.9;
-				width: 4rem;
-		}
-
-		@keyframes floating {
-			0% {
-			    transform: translateY(0%);
-			}
-			50% {
-			    transform: translateY(50%);
-			}
-			100% {
-			    transform: translateY(10%);
-			}
-		}*/
 
 }
-
-/* ========================================================
-  ROCKET Animation
-==========================================================*/
-
-/*.rocket {
-	width: 2rem;
-	height: 2rem;
-	position: absolute;
-	top: 10%;
-	right: 50%;
-	opacity: 0.9;
-	animation flotate 6s inifinite ease-in-out;
-}*/
-
-
-
-
-
-
-
-
-/*@-webkit-keyframes flotate {
-	% {
-		-webkit-transform: translateY(0%) rotate(0deg);
-		transform: translateY(0%) rotate(0deg);
-	}
-	50% {
-		-webkit-transform: translateY(30px) rotate(300deg);
-		transform: translateY(30px) rotate(300deg);
-	}
-	100% {
-		-webkit-transform: translateY(0%) rotate(0deg);
-		transform: translateY(0%) rotate(0deg);
-	}
-}*/
-
-/*@keyframes flotate {
-	% {
-		-webkit-transform: translateY(0%) rotate(0deg);
-		transform: translateY(0%) rotate(0deg);
-	}
-	50% {
-		-webkit-transform: translateY(30px) rotate(300deg);
-		transform: translateY(30px) rotate(300deg);
-	}
-	100% {
-		-webkit-transform: translateY(0%) rotate(0deg);
-		transform: translateY(0%) rotate(0deg);
-	}
-}*/
