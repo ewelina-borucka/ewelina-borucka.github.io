@@ -1,4 +1,3 @@
-
 .twoBoxes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,8 +35,6 @@ h4 {
   font-size: 0.8rem;
   padding-bottom: 1.4rem;
 }
-
-/*::-webkit-scrollbar {display:none;}*/
 
 
 /* ========================================================
@@ -382,12 +379,16 @@ h4 {
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-bottom: 2rem;
     }
 
     .square-portfolio {
       margin-top: 0;
+      padding-top: 4rem;
+      margin: auto;
     }
 
     p {
@@ -419,14 +420,12 @@ h4 {
   and (-webkit-min-device-pixel-ratio: 1) {
 
     .projectBox {
-      width: 11rem;
-      height: 11rem;
-
+      width: 10rem;
+      height: 10rem;
     }
 
     .description {
-      padding-left: 5rem;
-      padding-right: 5rem;
+      padding-left: 6rem;
     }
 
     p {
