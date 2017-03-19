@@ -1,3 +1,7 @@
+/* ========================================================
+  Base Element Styles
+==========================================================*/
+
 .twoBoxes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,6 +33,10 @@ p {
 
 h4 {
   margin: 0;
+}
+
+.main-footer {
+	padding-bottom: 1rem;
 }
 
 .language {
