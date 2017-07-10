@@ -4,9 +4,10 @@
 ==========================================================*/
 
 h2 {
-	text-transform: uppercase;
-	font-size: 1.5rem;
+	/*text-transform: uppercase;*/
 	margin: 0;
+	margin-bottom: 0.5rem;
+	word-spacing: -4px;
 }
 
 .row {
@@ -28,7 +29,7 @@ h2 {
 }
 
 .me p:first-child {
-	margin-top: 0.4rem;
+	margin-top: 2rem;
 }
 
 .contact {
@@ -36,7 +37,7 @@ h2 {
 	border-radius: 2px;
 	padding: 8px;
 	text-align: center;
-	margin: 2rem 0;
+	margin: 1rem 0;
 }
 
 .contact a {
@@ -95,7 +96,7 @@ Media Queries
 	.skills h2 {
 		font-size: 2rem;
 		padding-top: 2rem;
-		padding-bottom: 2rem;
+		/*padding-bottom: 2rem;*/
 	}
 
 }
@@ -126,7 +127,7 @@ Media Queries
 	}
 
 	.skills li {
-		margin-bottom: 1rem;
+		margin-bottom: 0.2rem;
 	}
 }
 
@@ -145,7 +146,7 @@ and (min-resolution: 192dpi) {
 	}
 
 	.intro, .skills {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		line-height: 2rem;
 	}
 

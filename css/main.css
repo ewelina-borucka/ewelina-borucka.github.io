@@ -451,13 +451,13 @@ a {
 	line-height: 2.4rem;
 	font-size: 1rem;
 	letter-spacing: -0.08rem;
-	padding-left: 0.2rem;
+	word-spacing: -1px;
+	padding-left: 0.1rem;
 }
 
 .welcome-text-2 {
 	display: none;
 }
-
 
 /* ========================================================
   Media Queries
@@ -487,6 +487,7 @@ a {
 	.main-nav a {
 		padding: 0.9rem;
 	}
+
 	.square {
 		margin-top: 4rem;
 		padding-top: 5rem;
@@ -566,6 +567,7 @@ a {
 		justify-content: space-between;    /* separate logo and nav items */
 		margin-top: 2rem;
 	}
+
 	.home-glitch {
 		font-size: 2.6rem;
 	}
@@ -580,7 +582,7 @@ a {
 		padding: 1.4rem;
 	}
 	.square-home {
-		padding-top: 6rem;
+		padding-top: 2rem;
 	}
 	.kuku-home {
 		-webkit-box-pack: end;
