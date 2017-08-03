@@ -4,7 +4,6 @@
 ==========================================================*/
 
 h2 {
-	/*text-transform: uppercase;*/
 	margin: 0;
 	margin-bottom: 0.5rem;
 	word-spacing: -4px;
@@ -73,12 +72,6 @@ h2 {
 Media Queries
 ==========================================================*/
 
-@media (max-width: 581px) {
-	.glitch-box {
-		display: none;
-	}
-}
-
 @media (min-width: 580px) {
 	.highlight {
 		font-weight: bold;
@@ -96,7 +89,6 @@ Media Queries
 	.skills h2 {
 		font-size: 2rem;
 		padding-top: 2rem;
-		/*padding-bottom: 2rem;*/
 	}
 
 }
@@ -131,10 +123,9 @@ Media Queries
 	}
 }
 
-
 /* ----------- Retina Screens ----------- */
 
-@media screen
+/*@media screen
 and (min-device-width: 1200px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (-webkit-min-device-pixel-ratio: 2), screen
@@ -154,4 +145,4 @@ and (min-resolution: 192dpi) {
 		margin-top: 3rem;
 		padding: 2rem;
 	}
-}
+}*/

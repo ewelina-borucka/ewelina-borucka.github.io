@@ -34,7 +34,6 @@ a {
 	margin-top: 1.5rem;
 }
 
-
 /* ========================================================
   Navigation
 ==========================================================*/
@@ -599,7 +598,7 @@ a {
   }
 }
 
-@media screen
+/*@media screen
   and (min-device-width: 1000px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (-webkit-min-device-pixel-ratio: 2), screen
@@ -657,4 +656,4 @@ a {
 			padding-left: 0.4rem;
 		}
 
-}
+}*/
